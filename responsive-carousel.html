@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1, user-scalable=1">
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link href="stylesheets/responsive-carousel.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  </head>
+<body>
+<div id="banner-section">
+  <div class="carousel">
+    <div class="carousel-inner">
+			<div class="slide active">
+				<a href=""><img src="images/bkg1.jpg"></a>
+      </div>
+      <div class="slide">
+				<a href=""><img src="images/bkg2.jpg"></a>
+      </div>
+    </div>
+    <div class="arrow arrow-left"></div>
+    <div class="arrow arrow-right"></div>
+  </div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/responsive-carousel.js"></script>
+<script>
+
+	// Custom options for the carousel
+	var args = {
+		arrowRight : '.arrow-right',
+		arrowLeft : '.arrow-left',
+		speed : 700,
+		slideDuration : 4000
+	};
+	// start BannerSlide
+	$('.carousel').BannerSlide(args);
+
+</script>
+</html>
